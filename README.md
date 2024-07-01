@@ -21,12 +21,3 @@ Los datos han sido limpiados y normalizados para asegurar su calidad. Las técni
 
 2. **Insertar Datos Limpiados**:
    - Ejecuta el script `scripts/insert_cleaned_data.sql` para insertar los datos preprocesados en las tablas correspondientes.
-
-### Ejemplos de Consultas
-
-```sql
--- Verificar que todos los médicos están registrados correctamente
-SELECT * FROM Medico;
-
--- Consultar citas confirmadas
-SELECT * FROM Cita WHERE Estatus = 'Confirmada';
