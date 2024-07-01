@@ -40,6 +40,15 @@ WITH (
     FIRSTROW = 2
 );
 
+BULK INSERT medifinder.dbo.Horario_Medico
+FROM 'C:\ruta\al\archivo\horario_medico_cleaned.csv'
+WITH (
+    FIELDTERMINATOR = ',',
+    ROWTERMINATOR = '\n',
+    FIRSTROW = 2
+);
+
+
 INSERT INTO Dias (Id, Dia) VALUES
 (1, 'Lunes'),
 (2, 'Martes'),
