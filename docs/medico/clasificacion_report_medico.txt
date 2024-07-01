@@ -1,0 +1,44 @@
+Reporte de Clasificación:
+-------------------------
+Contexto:
+El objetivo del modelo de clasificación es categorizar los honorarios de los médicos en función de variables como la especialidad y el país en el que trabajan. Este análisis permite entender cómo estas características influyen en los rangos de honorarios y ayuda a predecir las categorías de honorarios para nuevos datos.
+
+Descripción:
+Las métricas de evaluación utilizadas para el modelo de clasificación incluyen:
+- **Precisión (Accuracy)**: La proporción de predicciones correctas sobre el total de predicciones.
+- **Precisión (Precision)**: La proporción de verdaderos positivos entre todos los casos predichos como positivos.
+- **Recall**: La proporción de verdaderos positivos entre todos los casos que realmente son positivos.
+- **F1-score**: La media armónica de la precisión y el recall, proporcionando un equilibrio entre ambas métricas.
+
+Procedimiento:
+1. **Preparación de los Datos**:
+   - Al igual que en el modelo de regresión, se eliminaron columnas no relevantes y se convirtieron las variables categóricas a variables dummy.
+   
+2. **Entrenamiento y Evaluación del Modelo**:
+   - Los datos se dividieron en conjuntos de entrenamiento y prueba.
+   - Se entrenó un modelo de clasificación Random Forest utilizando el conjunto de entrenamiento.
+   - Se evaluó el modelo en el conjunto de prueba para calcular las métricas de evaluación.
+
+Resultados:
+Accuracy (Clasificación): 0.4
+
+              precision    recall  f1-score   soporte
+
+         600       0.00      0.00      0.00         2
+         700       1.00      0.20      0.33         5
+         750       0.47      0.78      0.58         9
+         800       0.00      0.00      0.00         1
+         950       0.00      0.00      0.00         3
+
+    accuracy                           0.40        20
+   macro avg       0.29      0.20      0.18        20
+weighted avg       0.46      0.40      0.35        20
+
+Interpretación:
+- **Precisión General**: Una precisión del 40% indica que el modelo clasifica correctamente los honorarios el 40% del tiempo.
+- **Detalles por Categoría**:
+  - La categoría de honorarios "750" tiene la mayor precisión y recall, sugiriendo que el modelo es más efectivo para predecir esta categoría.
+  - Las categorías "600", "800" y "950" tienen una precisión, recall y f1-score de 0.00, indicando que el modelo no logró predecir correctamente ningún caso en estas categorías.
+
+Conclusiones:
+La precisión general del modelo de clasificación es moderadamente baja, lo que sugiere que el modelo tiene limitaciones significativas en la predicción de las categorías de honorarios de los médicos. La efectividad del modelo varía considerablemente entre las diferentes categorías de honorarios, lo que indica que

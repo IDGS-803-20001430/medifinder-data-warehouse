@@ -1,0 +1,26 @@
+Reporte de Regresión:
+---------------------
+Contexto:
+El propósito del modelo de regresión lineal en este análisis es predecir los honorarios de los médicos basándose en su especialidad. Los datos utilizados provienen de un conjunto de registros médicos que incluyen diversas especialidades identificadas por un código único (Id_Especialidad) y los honorarios cobrados por cada médico.
+
+Descripción:
+El error cuadrático medio (Mean Squared Error, MSE) es una métrica comúnmente utilizada para evaluar la precisión de un modelo de regresión. El MSE calcula la media de los cuadrados de los errores o diferencias entre los valores predichos por el modelo y los valores reales observados en los datos de prueba. Un valor de MSE más bajo indica que el modelo tiene mejor desempeño y es más preciso en sus predicciones.
+
+Procedimiento:
+1. **Preparación de los Datos**:
+   - Se eliminaron columnas no relevantes para el modelo, tales como nombre, apellidos, email, entre otras.
+   - Las variables categóricas, como el país y la especialidad, fueron convertidas a variables dummy (variables indicadoras).
+   
+2. **Entrenamiento y Evaluación del Modelo**:
+   - Se dividieron los datos en conjuntos de entrenamiento y prueba.
+   - Se entrenó un modelo de regresión lineal utilizando el conjunto de entrenamiento.
+   - Se evaluó el modelo en el conjunto de prueba para calcular el MSE.
+
+Resultados:
+Mean Squared Error (Regresión): 12260.198704104907
+
+Interpretación:
+Un MSE de 12260.198704104907 sugiere que, en promedio, las predicciones del modelo de regresión se desvían del valor real de los honorarios en aproximadamente 110.75 unidades monetarias (la raíz cuadrada de 12260.198704104907). Aunque este valor proporciona una idea de la precisión del modelo, también es esencial considerar la distribución y rango de los honorarios en los datos originales para interpretar completamente el MSE.
+
+Conclusiones:
+El valor relativamente alto del MSE indica que el modelo de regresión lineal podría no ser el mejor predictor de los honorarios basándose únicamente en la especialidad del médico. Esto sugiere que otros factores no considerados en este modelo podrían tener una influencia significativa en los honorarios de los médicos.

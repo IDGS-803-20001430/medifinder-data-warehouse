@@ -1,0 +1,35 @@
+Informe de Modelos de Predicción en Medifinder
+
+1. Modelo de Regresión Lineal
+
+Análisis Exploratorio y Visualización de Datos
+
+Matriz de Correlación:
+El análisis inicial mostró una correlación positiva significativa entre el peso y la talla del paciente. La matriz de correlación se presenta a continuación:
+
+
+Interpretación: Este gráfico muestra la correlación entre el peso y la talla del paciente. Cuanto más cercano a 1 el valor, mayor es la correlación positiva entre las variables.
+
+Gráfico de Dispersión:
+El siguiente gráfico representa la distribución de los pacientes según su peso y talla, permitiendo observar la relación visual entre ambas variables:
+
+
+Interpretación: Este gráfico muestra la distribución de los pacientes según su peso y talla. Permite observar si existe alguna relación visual entre ambas variables.
+
+Modelo de Regresión Lineal
+
+Entrenamiento del Modelo:
+Se entrenó un modelo de regresión lineal utilizando el conjunto de entrenamiento, donde se ajustó la línea de regresión a los datos de entrenamiento:
+
+
+Interpretación: Este gráfico muestra la relación entre el peso y la talla del paciente. La línea roja representa la regresión lineal ajustada a los datos de entrenamiento.
+
+Evaluación del Modelo:
+Posteriormente, se evaluó el modelo utilizando el conjunto de prueba para comparar las predicciones con los valores reales:
+
+
+Interpretación: Este gráfico muestra la evaluación de la regresión lineal en el conjunto de prueba. Compara los datos reales (puntos azules) con las predicciones del modelo (línea roja).
+
+Métricas de Evaluación
+
+Error Cuadrático Medio (MSE): El MSE obtenido fue de 0.00016766994960295227, indicando un buen ajuste del modelo a los datos de prueba.

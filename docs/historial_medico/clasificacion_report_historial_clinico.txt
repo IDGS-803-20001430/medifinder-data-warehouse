@@ -1,0 +1,53 @@
+2. Modelo de Clasificación
+
+Análisis y Evaluación del Modelo
+
+Matriz de Confusión:
+
+
+Interpretación: Esta matriz de confusión muestra la comparación entre las clases reales (filas) y las clases predichas por el modelo (columnas).
+
+Reporte de Clasificación:
+
+css
+Copy code
+                                                            precision    recall  f1-score   support
+
+               Alergia estacional severa, Rinitis alérgica       0.00      0.00      0.00         1
+                  Ansiedad generalizada, Ataques de pánico       0.00      0.00      0.00         1
+                        Apnea del sueño, Ronquidos severos       1.00      1.00      1.00         4
+                         Colitis ulcerosa, Diarrea crónica       1.00      1.00      1.00         3
+                    Depresión mayor, Ansiedad generalizada       1.00      1.00      1.00         5
+           Dolor abdominal agudo, Sensibilidad epigástrica       1.00      1.00      1.00         3
+        Dolor abdominal intermitente, Distensión abdominal       1.00      1.00      1.00         2
+                          Dolor articular, Rigidez matinal       1.00      1.00      1.00         2
+        Dolor cervical, Limitación de movilidad del cuello       0.50      1.00      0.67         1
+                             Dolor lumbar crónico, Ciática       1.00      1.00      1.00         2
+             Dolor lumbar crónico, Limitación de movilidad       1.00      1.00      1.00         1
+                             Dolor lumbar, Rigidez matinal       1.00      1.00      1.00         1
+                              Dolor torácico agudo, Disnea       1.00      1.00      1.00         3
+           Enfermedad pulmonar obstructiva crónica, Disnea       0.00      0.00      0.00         1
+                             Epilepsia, Crisis convulsivas       1.00      1.00      1.00         3
+                Fatiga crónica, Pérdida de peso progresiva       1.00      1.00      1.00         2
+                 Fiebre persistente, Dolor abdominal agudo       0.50      1.00      0.67         1
+                       Gastritis crónica, Acidez estomacal       1.00      1.00      1.00         4
+                    Hipertensión arterial, Diabetes tipo 2       1.00      1.00      1.00         2
+                                            Hipotiroidismo       0.00      0.00      0.00         1
+                 Palpitaciones cardíacas, Mareos asociados       1.00      1.00      1.00         2
+                        Rinitis alérgica, Congestión nasal       0.00      0.00      0.00         0
+                      Sangrado gingival, Encías inflamadas       1.00      1.00      1.00         5
+Síndrome de ovario poliquístico, Resistencia a la insulina       0.00      0.00      0.00         0
+ Síndrome del intestino irritable, Dolor abdominal crónico       0.83      1.00      0.91         5
+            Vértigo posicional paroxístico benigno, Mareos       1.00      1.00      1.00         4
+                 Vértigo recurrente, Pérdida de equilibrio       0.00      0.00      0.00         1
+
+                                                  accuracy                           0.92        60
+                                                 macro avg       0.70      0.74      0.71        60
+                                              weighted avg       0.89      0.92      0.90        60
+Interpretación: Este reporte detalla la precisión, recall, f1-score y soporte para cada clase del modelo de clasificación. Muestra la efectividad del modelo para predecir las diversas condiciones médicas basado en las características del paciente.
+
+Conclusiones y Accesibilidad
+
+Para replicar estos resultados y explorar más a fondo los modelos desarrollados, consulte los notebooks regression_model.ipynb y classification_model.ipynb ubicados en el directorio models/. Estos notebooks contienen el código completo utilizado para cargar los datos, realizar análisis exploratorio, entrenar los modelos y evaluar su desempeño.
+
+Para cualquier pregunta o detalle adicional, no dude en contactar al equipo de desarrollo de Medifinder.

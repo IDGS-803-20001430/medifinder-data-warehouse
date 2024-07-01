@@ -1,0 +1,21 @@
+Modelo de Clasificación:
+
+El modelo de clasificación tiene como objetivo predecir el estatus (Hombre o Mujer) de los pacientes basándose en variables como la edad y el sexo. A continuación se presenta el reporte detallado:
+
+markdown
+Copy code
+Reporte de Clasificación:
+Accuracy (Clasificación): 0.43333333333333335
+
+              precision    recall  f1-score   support
+
+      Hombre       0.40      0.62      0.48        13
+       Mujer       0.50      0.29      0.37        17
+
+    accuracy                           0.43        30
+   macro avg       0.45      0.45      0.43        30
+weighted avg       0.46      0.43      0.42        30
+Accuracy: La precisión general del modelo es del 43.33%, lo que significa que el 43.33% de las predicciones fueron correctas.
+Precision: Para la clase Hombre, el modelo predice correctamente el 40% de los casos. Para la clase Mujer, predice correctamente el 50% de los casos.
+Recall: Para la clase Hombre, el modelo identifica correctamente el 62% de los casos reales. Para la clase Mujer, identifica correctamente el 29% de los casos reales.
+F1-score: Es una medida que combina precisión y recall en un solo número. El F1-score promedio es del 42%, con 48% para Hombre y 37% para Mujer.

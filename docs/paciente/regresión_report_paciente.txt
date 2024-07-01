@@ -1,0 +1,9 @@
+Modelo de Regresión:
+
+El modelo de regresión tiene como objetivo predecir la edad de los pacientes en función de variables como el sexo y el estatus. A continuación se presenta el reporte detallado:
+
+java
+Copy code
+Reporte de Regresión:
+Mean Squared Error (Regresión): 19.936076607180645
+El Mean Squared Error (MSE) indica el promedio de los cuadrados de las diferencias entre los valores reales y los valores predichos por el modelo. En este caso, un MSE de aproximadamente 19.94 sugiere que las predicciones del modelo tienen un error cuadrático medio de este valor, en términos de la diferencia en las edades predichas y reales de los pacientes.
